@@ -10,9 +10,9 @@ import java.util.List;
 
 @Service
 public class HrService {
+    @Autowired
+    HrMapper mapper;
     public String hr () {
-        @Autowired
-        HrMapper mapper;
         List<Hr> res=mapper.getAllHrs(1,"");
         return JSONArray.toJSON(res).toString();
     }
