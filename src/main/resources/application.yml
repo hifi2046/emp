@@ -1,0 +1,14 @@
+server:
+  port: 8088
+  #  context-path: /emp
+spring.security.user:
+  name: hifi
+  password: 123456
+  roles: admin
+spring.datasource:
+  type: com.alibaba.druid.pool.DruidDataSource
+  url: jdbc:mysql:///vhr
+  username: hifi
+  password: _Hifi2046
+
+
